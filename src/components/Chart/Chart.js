@@ -74,7 +74,7 @@ const Chart = ({chartCustomizedOptions}) => {
 
     const chartOptions = {
         chart: {
-            type: chartCustomizedOptions.chart.type,
+            type: chartCustomizedOptions.chartType,
         },
         title: {
             text: 'CO2e Emissions',
@@ -90,7 +90,17 @@ const Chart = ({chartCustomizedOptions}) => {
         tooltip: {
             valueSuffix: ' Tonnes',
         },
-        plotOptions: {...chartCustomizedOptions.plotOptions},
+        plotOptions: {
+            series: {
+              dataLabels: {
+                enabled: true,
+                format: chartCustomizedOptions.plotOptionsFormat,
+                style: {
+                  fontSize: 14
+                }
+              }
+            }
+        },
         series: [
             {
                 name: 'CO2e Emission',

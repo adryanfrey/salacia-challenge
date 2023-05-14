@@ -9,20 +9,8 @@ import Sidebar from '../../components/Sidebar/Sidebar'
 const ColumnChart = () => {
 
   const chartCustomizedOptions = {
-    chart: {
-      type: 'column'
-    },
-    plotOptions: {
-      series: {
-        dataLabels: {
-          enabled: true,
-          format: '{point.y}',
-          style: {
-            fontSize: 14
-          }
-        }
-      }
-    }
+    chartType: 'column',
+    plotOptionsFormat: '{point.y}'
   }
 
   return (

@@ -9,20 +9,8 @@ import Sidebar from '../../components/Sidebar/Sidebar'
 const LineChart = () => {
 
   const chartCustomizedOptions = {
-    chart: {
-      type: 'line'
-    },
-    plotOptions: {
-      series: {
-        dataLabels: {
-          enabled: true,
-          format: '{point.y}',
-          style: {
-            fontSize: 14
-          }
-        }
-      }
-    },
+    chartType: 'line',
+    plotOptionsFormat: '{point.y}'
   }
 
   return (

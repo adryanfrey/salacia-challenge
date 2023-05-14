@@ -9,20 +9,8 @@ import Sidebar from '../../components/Sidebar/Sidebar'
 const PieChart = () => {
 
   const chartCustomizedOptions = {
-    chart: {
-      type: 'pie'
-    },
-    plotOptions: {
-      series: {
-        dataLabels: {
-          enabled: true,
-          format: '{point.name}: {point.percentage:.2f}%',
-          style: {
-            fontSize: 14
-          }
-        }
-      }
-    },
+    chartType: 'pie',
+    plotOptionsFormat: '{point.name}: {point.percentage:.2f}%'
   }
 
   return (

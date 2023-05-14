@@ -9,22 +9,9 @@ import Sidebar from '../../components/Sidebar/Sidebar'
 const BarChart = () => {
 
   const chartCustomizedOptions = {
-    chart: {
-      type: 'bar'
-    },
-    plotOptions: {
-      series: {
-        dataLabels: {
-          enabled: true,
-          format: '{point.y}',
-          style: {
-            fontSize: 14
-          }
-        }
-      }
-    },
+    chartType: 'bar',
+    plotOptionsFormat: '{point.y}'
   }
-
   return (
     <div className={styles.container}>
       <div className={styles.container2}>
