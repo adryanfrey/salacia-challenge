@@ -1,0 +1,42 @@
+.sideBar{
+    background: #fff;
+    box-shadow: 10px 1px 10px 1px rgba(0, 0, 0, 0.2);
+    border-right: 1px solid #000;
+}
+
+.sideBar h2{
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+.link {
+    height: 100%;
+    width: 100%;
+    display: block;
+    padding: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.3); 
+    color: #000;
+}
+
+@media (max-width: 1100px){
+
+    .sideBar{
+        display: flex;
+        border: none;
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    ul{
+        display: flex;
+        height: 100%;
+    }
+
+    .link {
+        border: none;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+    }
+
+    h2 {
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+    }
+}

@@ -5,18 +5,31 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-#root, body, html {
+#root,
+body,
+html {
   height: 100%;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
 
 .App {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 100%;
+  background: linear-gradient(100deg, rgba(212,246,255,1) 0%, rgba(84,185,255,1) 100%);
 }
 
-#container {
-  width: 100%;
-  max-width: 800px;
-} 
+
+.active {
+  background-color: rgba(3, 138, 255, 0.4);
+}
